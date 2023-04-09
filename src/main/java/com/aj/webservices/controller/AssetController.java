@@ -20,6 +20,7 @@ import com.aj.webservices.service.AssertServiceImp;
 public class AssetController {
 	
 	
+	
 	/*
 	 * @Autowired AssertServiceImp assetServiceImp;
 	 * 
@@ -34,11 +35,12 @@ public class AssetController {
 	 * 
 	 * @DeleteMapping("/delete") public void deleteBook() {
 	 * assetServiceImp.deleteAllData(); }
-	 * 
 	 */
+	  
+	 
 	
 	@RequestMapping("/assets")
-	public List<Asset> retrieveAllCourses(){
+	public List<Asset> retrieveAllAssets(){
 		return Arrays.asList(new Asset(1,"111ABCD","FAT_FORD"),
 				new Asset(2,"111ABCD1","FAT_GM"));
 	}
