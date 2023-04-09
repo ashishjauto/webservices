@@ -7,11 +7,9 @@ public class Asset {
 	    private String asset_name;
 	    private String asset_title;
 	  
-	    public Asset() {
-	        super();
-	    }
+	   
 	    public Asset(long id, String name, String title) {
-	        super();
+	      
 	        this.asset_id = id;
 	        this.asset_name = name;
 	        this.asset_title = title;
@@ -40,7 +38,13 @@ public class Asset {
 	    public void setTitle(String title) {
 	        this.asset_title = title;
 	    }
+
+		@Override
+		public String toString() {
+			return "Asset [asset_id=" + asset_id + ", asset_name=" + asset_name + ", asset_title=" + asset_title + "]";
+		}
 	  
+	    
 	
 	
 }
